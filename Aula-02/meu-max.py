@@ -13,14 +13,15 @@ if __name__ == '__main__':
     print(meu_max([1, 100]))
 
     print('Estudo Experimental sobre o tempo da função max')
-    for n in range(100, 1001, 100)
+    inicio = 10000000
+    for n in range(0, inicio * 20+1, inicio):
+     inicio = time()
+     meu_max(range(n))
+     fim = time()
+     tempo_de_execucao_em_segundos = fim - inicio
+     print('*' * int(tempo_de_execucao_em_segundos *10), n)
 
 
-    print('Testando para entrada de tamanho 2')
-    inicio = time()
-    meu_max([1, 100])
-    fim = time()
-    tempo_de_execucao_em_segundos = int(fim - inicio)
-    print('*' * (tempo_de_execucao_em_segundos +1))
+
 
 
